@@ -1,2 +1,2 @@
 # I love the way reggie moves.
-<div align="center"> ![](reggie.jpg) </div>
+<img align="center" src="reggie.jpg">
